@@ -1,0 +1,18 @@
+/*
+Theme Name:   Ignacio Talvi
+Theme URI:    https://ignaciotalvi.com
+Description:  Hello Elementor child theme for ignaciotalvi.com. Design lives in Elementor (Atomic); this theme only holds the code layer.
+Author:       Ignacio Talvi
+Author URI:   https://ignaciotalvi.com
+Template:     hello-elementor
+Version:      1.0.0
+Requires PHP: 8.1
+Text Domain:  ignaciotalvi
+License:      GNU General Public License v3 or later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*
+ * Rule: visual styling belongs in Elementor (classes, variables, components).
+ * Only global CSS worth versioning goes here: resets and utilities.
+ */
