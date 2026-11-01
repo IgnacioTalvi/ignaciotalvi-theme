@@ -31,3 +31,4 @@ function ignaciotalvi_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'ignaciotalvi_enqueue_styles', 20 );
 
 require_once get_stylesheet_directory() . '/inc/cleanup.php';
+require_once get_stylesheet_directory() . '/inc/fonts.php';

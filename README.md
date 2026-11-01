@@ -17,7 +17,17 @@ Visual design is built in Elementor (Atomic). This theme is only the code layer.
 style.css         Theme header + minimal global CSS
 functions.php     Enqueues styles and loads files from inc/
 inc/cleanup.php   <head> cleanup (emojis, generator, XML-RPC…)
+inc/fonts.php     Self-hosted fonts: @font-face, preload, Elementor registration
 ```
+
+## Fonts
+
+Clash Display (headings) and Satoshi (text), variable versions, from [Fontshare](https://www.fontshare.com).
+
+The font files are **not** in this repo: the ITF Free Font License forbids redistributing them through public repositories. To set up a new environment:
+
+1. Download both families from Fontshare.
+2. Upload `ClashDisplay-Variable.woff2` and `Satoshi-Variable.woff2` to `wp-content/uploads/fonts/`.
 
 ## Branches
 

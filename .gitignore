@@ -5,3 +5,10 @@ node_modules/
 .vscode/
 .idea/
 *.zip
+
+# Fonts: license forbids public redistribution. They live in wp-content/uploads/fonts/
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.eot
