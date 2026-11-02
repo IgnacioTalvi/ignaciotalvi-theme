@@ -1,0 +1,44 @@
+/**
+ * Design system rules that Elementor's Atomic panel can't express.
+ *
+ * Everything else (sizes, colors, spacing, layout) lives in Elementor
+ * classes and variables. The selectors below are Atomic global class
+ * names, so those classes must never be renamed in Elementor.
+ */
+
+/* Surfaces: semantic tokens each surface hands down to its content. */
+.surface-dark {
+	--surface-muted: var(--gray-400);
+	--surface-accent: var(--lime-400);
+	--surface-border: var(--white-a20);
+}
+
+.surface-light {
+	--surface-muted: var(--gray-600);
+	--surface-accent: var(--navy-950);
+	--surface-border: var(--gray-200);
+}
+
+.surface-lime {
+	--surface-muted: var(--gray-600);
+	--surface-accent: var(--navy-950);
+	--surface-border: var(--navy-950-a20);
+}
+
+/* Text roles: follow the surface they sit on. Fallbacks apply outside one. */
+.text-muted {
+	color: var(--surface-muted, var(--gray-600));
+}
+
+.text-accent {
+	color: var(--surface-accent, var(--navy-950));
+}
+
+/* Eyebrow: decorative line before the label, without extra markup. */
+.eyebrow::before {
+	content: "";
+	width: 3.5rem;
+	height: 1px;
+	flex-shrink: 0;
+	background-color: currentColor;
+}

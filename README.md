@@ -18,6 +18,7 @@ style.css         Theme header + minimal global CSS
 functions.php     Enqueues styles and loads files from inc/
 inc/cleanup.php   <head> cleanup (emojis, generator, XML-RPC…)
 inc/fonts.php     Self-hosted fonts: @font-face, preload, Elementor registration
+assets/css/design-system.css  Rules the Atomic panel can't express
 ```
 
 ## Fonts
@@ -38,3 +39,4 @@ The font files are **not** in this repo: the ITF Free Font License forbids redis
 
 - This repo is the single source of truth: don't edit theme files from WP Admin or the file manager (the next deploy overwrites them).
 - Visual styling goes in Elementor; only functional code goes here.
+- Exception: `assets/css/design-system.css` holds the few design rules the Atomic panel can't express (surface tokens, text roles, pseudo-elements). It targets Atomic class names, so never rename those classes in Elementor.

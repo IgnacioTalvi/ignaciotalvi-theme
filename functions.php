@@ -27,6 +27,15 @@ function ignaciotalvi_enqueue_styles() {
 		$deps,
 		file_exists( $file ) ? (string) filemtime( $file ) : null
 	);
+
+	// Rules the Atomic panel can't express (see assets/css/design-system.css).
+	$design_system = get_stylesheet_directory() . '/assets/css/design-system.css';
+	wp_enqueue_style(
+		'ignaciotalvi-design-system',
+		get_stylesheet_directory_uri() . '/assets/css/design-system.css',
+		[],
+		file_exists( $design_system ) ? (string) filemtime( $design_system ) : null
+	);
 }
 add_action( 'wp_enqueue_scripts', 'ignaciotalvi_enqueue_styles', 20 );
 
